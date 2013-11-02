@@ -23,7 +23,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Production development
+# Shared enviroments
+group :development, :test do
+  gem 'rspec-rails', '>= 2.14.0' # also in development to have access to Rspec specific generators
+end
+
+# Development environment
 group :development do
   gem 'annotate', '>= 2.5.0'
   gem 'better_errors', '>= 0.8.0' # cool error info pages in development. Trace last error also by navigating to 0.0.0.0:3000/__better_errors
@@ -34,8 +39,11 @@ group :development do
   gem 'lol_dba', '>= 1.5.0' # Advise on missing indexes, run taks rake db:find_indexes
 end
 
-# Production test
+# Test environment
 group :test do
+  gem 'shoulda-matchers', '>= 2.4.0' # matcher helpers for rspec
+  gem 'selenium-webdriver', '>= 2.37.0' # run test with javascript involved
+  gem 'capybara', '>= 2.1.0' # simulate interactions in tests with English-like syntax
 end
 
 # Production environment
