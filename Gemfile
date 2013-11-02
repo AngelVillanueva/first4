@@ -29,9 +29,9 @@ group :development do
   gem 'better_errors', '>= 0.8.0' # cool error info pages in development. Trace last error also by navigating to 0.0.0.0:3000/__better_errors
   gem 'binding_of_caller', '>= 0.7.1' # cool error info pages in development
   gem 'quiet_assets', '>= 1.0.2' # Get rid of loading assets info in development log
-  #gem 'ruby_gntp', '~> 0.3.4' # Growl with Bullet
-  #gem 'bullet', '~> 4.6.0' # Advise on n+1 queries
-  #gem 'lol_dba', '~> 1.5.0' # Advise on missing indexes
+  gem 'ruby_gntp', '>= 0.3.4' # Growl with Bullet
+  gem 'bullet', '>= 4.6.0' # Advise on n+1 queries
+  gem 'lol_dba', '>= 1.5.0' # Advise on missing indexes, run taks rake db:find_indexes
 end
 
 # Production test
