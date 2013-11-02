@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 # Basic foundation
 gem 'rails', '4.0.0'
+gem 'thin' # server for development and test environments
 gem 'pg', '~> 0.15' # postgresql database adapter for all environments
 gem 'sass-rails', '~> 4.0.0' # Use SCSS for stylesheets
 gem 'uglifier', '~> 2.1.1' # Use Uglifier as compressor for JavaScript assets
@@ -13,6 +14,7 @@ gem 'turbolinks', '~> 1.1.1' # Turbolinks makes following links in your web appl
 gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease
 # Additions for most projects
 gem 'faker', '~> 1.1.2' # tool to build fake data easily but with sense
+gem 'simple_form', '>= 2.1' # helper for your forms; add gem 'country_select' if needed
 
 # Documentation
 group :doc do
@@ -22,6 +24,16 @@ end
 
 # Production development
 group :development do
+  gem 'annotate', '>=2.5.0'
+  gem 'awesome_print', '>= 1.1.0' # cool console object output
+  #gem 'better_errors', '0.8.0' # cool error info pages in development. Trace last error also by navigating to 0.0.0.0:3000/__better_errors
+  #gem 'binding_of_caller', '0.7.1' # cool error info pages in development
+  #gem 'meta_request', '0.2.1' # rails_panel chrome extension.
+  #gem 'sextant', '0.2.3' # Navigate to 0.0.0.0:3000/rails/routes to see routes in the browser
+  #gem 'quiet_assets', '~> 1.0.2' # Get rid of loading assets info in development log
+  #gem 'ruby_gntp', '~> 0.3.4' # Growl with Bullet
+  #gem 'bullet', '~> 4.6.0' # Advise on n+1 queries
+  #gem 'lol_dba', '~> 1.5.0' # Advise on missing indexes
 end
 
 # Production test
