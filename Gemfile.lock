@@ -189,7 +189,7 @@ DEPENDENCIES
   capybara (>= 2.1.0)
   coffee-rails (~> 4.0.0)
   faker (~> 1.1.2)
-  haml
+  haml (>= 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails (~> 3.0.4)
   lol_dba (>= 1.5.0)
