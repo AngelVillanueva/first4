@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Angel Villanueva -- Developer -- angel.vperez@gmail.com
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Ruby
+    Rails, Bootstrap, jQuery
