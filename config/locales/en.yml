@@ -21,6 +21,7 @@
 
 en:
   title_row: "Ruby on Rails Tutorial Sample App"
+  site_description: "This is the description for the site"
   static_pages:
     home:
       title: "Home"
