@@ -1,5 +1,5 @@
 :javascript
   // root namespace used to check if analytics is loaded or not
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
-  root._gaq = [['_setAccount', 'UA-44468535-1'], ['_trackPageview']];
+  root._gaq = [['_setAccount', "#{ ENV[ 'GOOGLE_ANALYTICS' ] }"], ['_trackPageview']];
   root.analytics_loaded = false;

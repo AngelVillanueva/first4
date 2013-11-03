@@ -13,6 +13,7 @@ gem 'jquery-rails', '~> 3.0.4' # Use jquery as the JavaScript library
 gem 'turbolinks', '~> 1.1.1' # Turbolinks makes following links in your web application faster
 gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease
 gem 'haml', '>= 4.0.0' # templating haiku
+gem 'figaro' # env variables the easy way
 # Additions for most projects
 gem 'awesome_print', '>= 1.1.0' # cool console object output
 gem 'faker', '~> 1.1.2' # tool to build fake data easily but with sense
