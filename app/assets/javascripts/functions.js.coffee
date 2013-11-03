@@ -1,10 +1,5 @@
 ## SHARED JS FUNCTIONS
 
-# root namespace used to check if analytics is loaded or not
-root = exports ? this
-root._gaq = [['_setAccount', 'UA-44468535-1'], ['_trackPageview']]
-root.analytics_loaded = false
-
 # check if CookiePolicy cookie already exists to show or not the warning
 @checkdCookiesPolicyCookie = ->
   dcplyName = "DCKPLCY"
