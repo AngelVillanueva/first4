@@ -46,6 +46,7 @@ group :test do
   gem 'shoulda-matchers', '>= 2.4.0' # matcher helpers for rspec
   gem 'selenium-webdriver', '>= 2.37.0' # run test with javascript involved
   gem 'capybara', '>= 2.1.0' # simulate interactions in tests with English-like syntax
+  gem 'launchy', '>= 2.3.0' # method save_and_open_page for capybara
   gem 'rb-fsevent', require: false
   gem 'growl'
 end
