@@ -27,6 +27,7 @@ end
 # Shared enviroments
 group :development, :test do
   gem 'rspec-rails', '>= 2.14.0' # also in development to have access to Rspec specific generators
+  gem 'guard-rspec', '>= 2.1.0'
 end
 
 # Development environment
@@ -45,6 +46,8 @@ group :test do
   gem 'shoulda-matchers', '>= 2.4.0' # matcher helpers for rspec
   gem 'selenium-webdriver', '>= 2.37.0' # run test with javascript involved
   gem 'capybara', '>= 2.1.0' # simulate interactions in tests with English-like syntax
+  gem 'rb-fsevent', require: false
+  gem 'growl'
 end
 
 # Production environment
