@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: jobs
+# Table name: professions
 #
 #  id         :integer          not null, primary key
 #  name       :string(255)
@@ -9,6 +9,6 @@
 #  updated_at :datetime
 #
 
-class Job < ActiveRecord::Base
+class Profession < ActiveRecord::Base
   has_many :characters
 end

@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Job do
+describe Profession do
   describe "with valid attributes" do
-    let( :job ) { Job.new }
-    subject { job }
+    let( :profession ) { Profession.new }
+    subject { profession }
 
     it { should respond_to :characters }
     it { should be_valid }

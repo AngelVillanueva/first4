@@ -7,7 +7,7 @@ describe Character do
   describe "with valid attributes" do
     it { should be_valid }
   end
-  describe "belongs to a job" do
-    it { should belong_to( :job ) }
+  describe "belongs to a Profession" do
+    it { should belong_to( :profession ) }
   end
 end
