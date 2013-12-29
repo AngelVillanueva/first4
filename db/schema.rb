@@ -11,9 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20131229165617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "personajes", force: true do |t|
+    t.string   "gender"
+    t.string   "name"
+    t.integer  "age"
+    t.integer  "fuerza"
+    t.integer  "constitucion"
+    t.integer  "tamano"
+    t.integer  "destreza"
+    t.integer  "apariencia"
+    t.integer  "inteligencia"
+    t.integer  "poder"
+    t.integer  "educacion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
