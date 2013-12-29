@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Personaje do
+describe Character do
   describe "with valid attributes" do
-    let( :personaje ) { Personaje.new }
-    subject { personaje }
+    let( :character ) { Character.new }
+    subject { character }
 
     it { should be_valid }
   end

@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: personajes
+# Table name: characters
 #
 #  id           :integer          not null, primary key
 #  gender       :string(255)
@@ -18,5 +18,5 @@
 #  updated_at   :datetime
 #
 
-class Personaje < ActiveRecord::Base
+class Character < ActiveRecord::Base
 end
