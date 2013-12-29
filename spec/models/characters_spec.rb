@@ -24,4 +24,11 @@ describe Character do
       pj.skills.count.should eql Skill.count
     end
   end
+  describe "with the assigned skills with its base percent as default value" do
+    it do
+      sk = Skill.create( name: "Buscar libros", base: "30" )
+      pj = Character.create
+      pj.skill_levels.first.percent.should eql 30
+    end
+  end
 end

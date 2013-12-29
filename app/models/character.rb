@@ -23,4 +23,11 @@ class Character < ActiveRecord::Base
   belongs_to :profession
   has_many :skill_levels
   has_many :skills, through: :skill_levels
+
+  before_create :assign_skills
+
+  private
+  def assign_skills
+    self.skills = Skill.all
+  end
 end
