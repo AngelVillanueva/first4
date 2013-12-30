@@ -12,4 +12,5 @@
 class Skill < ActiveRecord::Base
   has_many :skill_levels
   has_many :characters, through: :skill_levels
+  has_and_belongs_to_many :professions
 end

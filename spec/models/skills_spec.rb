@@ -14,4 +14,7 @@ describe Skill do
     its( :characters ) { should_not be_nil }
     it { should respond_to :skill_levels }
   end
+  describe "could be linked to one or more Professions" do
+    it { should respond_to :professions }
+  end
 end
